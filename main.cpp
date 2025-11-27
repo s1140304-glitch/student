@@ -1,14 +1,25 @@
 #include <iostream>
 using namespace std;
-int main()
-{
-    cout<<"請輸入你的年齡:"
-    int age;
-    cin >> age;
-    if (age>= 18 ) {
-        cout << "18歲成年可以看 pxxxhub 網站" << end1;
+
+int main() {
+    double height, weight, bmi;
+
+    cout << "請輸入身高(cm): ";
+    cin >> height;
+
+    cout << "請輸入體重(kg): ";
+    cin >> weight;
+
+    height /= 100.0;
+    bmi = weight / (height * height);
+
+    cout << fixed << setprecision(2);
+    cout << "您的 BMI = " << bmi << endl;
+
+    if (bmi < 18.5){
+        cout << "體重過輕";
+    }else if (bmi < 24.9)
+        cout << "體重正常";
+    }else {
+        cout << "體重過重";
     }
-    if (age < 18) {
-        cout <<"未成年好好讀書" << end1;
-    }
-        
