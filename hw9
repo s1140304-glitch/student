@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Outer loop for the first factor (1 to 9)
+    for (int i = 1; i <= 9; ++i) {
+        // Inner loop for the second factor (1 to 9)
+        for (int j = 1; j <= 9; ++j) {
+            // Print the multiplication result for i * j
+            cout << i << " * " << j << " = " << i * j << "\t";
+        }
+        // Move to the next line after each row of results
+        cout << endl;
+    }
+    return 0;
+}
