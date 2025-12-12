@@ -1,25 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    double height, weight, bmi;
-
-    cout << "請輸入身高(cm): ";
-    cin >> height;
-
-    cout << "請輸入體重(kg): ";
-    cin >> weight;
-
-    height /= 100.0;
-    bmi = weight / (height * height);
-
-    cout << fixed << setprecision(2);
-    cout << "您的 BMI = " << bmi << endl;
-
-    if (bmi < 18.5){
-        cout << "體重過輕";
-    }else if (bmi < 24.9)
-        cout << "體重正常";
-    }else {
-        cout << "體重過重";
+int main()
+{
+    int subject = 5;
+    int grade[5] = {98,30,10,15,92};
+    int sum = 0;
+    for (int i=0;i<5;i++) {
+        sum = sum + grade[i];
     }
+    int average = sum/subject;
+    cout<<"段考的平均是" <<average;
+    return 0;
+}
